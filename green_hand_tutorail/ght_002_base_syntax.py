@@ -1,3 +1,6 @@
+'''
+    只是python基础语法
+'''
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 import sys
@@ -67,7 +70,7 @@ def info():
         从某个模块中导入多个函数,格式为： from somemodule import firstfunc, secondfunc, thirdfunc
         将某个模块中的全部函数导入，格式为： from somemodule import *
 
-    python命令行：可以采用python -h来查看；python -c 
+    python命令行：可以采用python -h来查看；python -c
         -c cmd : 执行一个字符串命令，例如：python -c "print('234+456=',234+456)"
         -m mod : 把一个库模块作为脚本运行，例如：pip与python -m pip 作用相等
 
@@ -79,25 +82,43 @@ def info():
     print(info.__doc__)
 
 def identifier_def():
+    '''
+        标识定义,可以使用中文字符作为变量名
+        性别 = "男"
+        体重 = 69
+        print(_age, 体重, 性别)
+    '''
     _age = 12
-    性别 = "男"
-    体重 = 69
-    print(_age, 体重, 性别)
+    print(_age)
 
 def system_keyword():
+    '''
+        获取系统保留关键字
+    '''
     import keyword
     print(keyword.kwlist)
 
 def input_print():
+    '''
+        输入输出函数
+    '''
+
     age = input("请输入你的年龄:")
     name = input("请输入你的姓名:")
-    print("你的年龄和姓名分别是:", age, end = ' ')
+    print("你的年龄和姓名分别是:", age, end=' ')
     print(name)
 
 def used_help():
+    '''
+        help使用
+    '''
     help(max)
 
 def main(argv):
+    '''
+    主函数
+    '''
+    print("运行参数", argv)
     info()
     identifier_def()
     system_keyword()
@@ -106,4 +127,3 @@ def main(argv):
 
 if __name__ == "__main__":
     main(sys.argv)
-

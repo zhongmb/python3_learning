@@ -1,3 +1,6 @@
+'''
+模板文件
+'''
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 import sys
@@ -9,6 +12,10 @@ def info():
     print(info.__doc__)
 
 def main(argv):
+    '''
+    主函数
+    '''
+    print("运行参数", argv)
     info()
 
 

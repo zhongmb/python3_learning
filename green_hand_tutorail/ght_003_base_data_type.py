@@ -1,3 +1,6 @@
+'''
+    基础数据类型
+'''
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 import sys
@@ -39,13 +42,13 @@ def info():
         3、数值的除法（/）总是返回一个浮点数，要获取整数使用//操作符。
         4、在混合计算时，Python会把整型转换成为浮点数。
     String（字符串）
-        Python中的字符串用单引号(')或双引号(")括起来，同时使用反斜杠(\)转义特殊字符。
+        Python中的字符串用单引号(')或双引号(")括起来，同时使用反斜杠(\\)转义特殊字符。
         字符串的截取的语法格式如下：变量[头下标:尾下标]
         索引值以 0 为开始值，-1 为从末尾的开始位置。
         加号 (+) 是字符串的连接符， 星号 (*) 表示复制当前字符串，紧跟的数字为复制的次数。
 
-        Python 使用反斜杠(\)转义特殊字符，如果你不想让反斜杠发生转义，可以在字符串前面添加一个 r，表示原始字符串
-        另外，反斜杠(\)可以作为续行符，表示下一行是上一行的延续。也可以使用 \"\"\"...\"\"\" 或者 \'\'\'...\'\'\' 跨越多行。
+        Python 使用反斜杠(\\)转义特殊字符，如果你不想让反斜杠发生转义，可以在字符串前面添加一个 r，表示原始字符串
+        另外，反斜杠(\\)可以作为续行符，表示下一行是上一行的延续。也可以使用 \"\"\"...\"\"\" 或者 \'\'\'...\'\'\' 跨越多行。
 
         注意：
             1、反斜杠可以用来转义，使用r可以让反斜杠不发生转义。
@@ -123,45 +126,56 @@ def info():
     print(info.__doc__)
 
 def set_used():
+    '''
+    集合使用
+    '''
     student = {'Tom', 'Jim', 'Mary', 'Tom', 'Jack', 'Rose'}
- 
-    print(student)   # 输出集合，重复的元素被自动去掉 
+
+    print(student)   # 输出集合，重复的元素被自动去掉
     # 成员测试
-    if('Rose' in student) :
+    if 'Rose' in student:
         print('Rose 在集合中')
-    else :
+    else:
         print('Rose 不在集合中')
- 
- 
+
     # set可以进行集合运算
-    a = set('abracadabra')
-    b = set('alacazam')
- 
-    print(a) 
-    print(a - b)     # a和b的差集 
-    print(a | b)     # a和b的并集 
-    print(a & b)     # a和b的交集 
-    print(a ^ b)     # a和b中不同时存在的元素
+    set_a = set('abracadabra')
+    set_b = set('alacazam')
+
+    print(set_a)
+    print(set_a - set_b)     # a和b的差集
+    print(set_a | set_b)     # a和b的并集
+    print(set_a & set_b)     # a和b的交集
+    print(set_a ^ set_b)     # a和b中不同时存在的元素
 
 def number_used():
-    counter = 100 # 整型变量 
-    miles = 1000.0 # 浮点型变量 
-    name = "runoob" # 字符串 
+    '''
+    数字使用
+    '''
+    counter = 100 # 整型变量
+    miles = 1000.0 # 浮点型变量
+    name = "runoob" # 字符串
     print(counter)
     print(miles)
     print(name)
 
 def string_used():
-    str = 'Runoob' 
-    print (str)          # 输出字符串
-    print (str[0:-1])    # 输出第一个到倒数第二个的所有字符
-    print (str[0])       # 输出字符串第一个字符
-    print (str[2:5])     # 输出从第三个开始到第五个的字符
-    print (str[2:])      # 输出从第三个开始的后的所有字符
-    print (str * 2)      # 输出字符串两次
-    print (str + "TEST") # 连接字符串
+    '''
+    字符串使用
+    '''
+    teststr = 'Runoob'
+    print(teststr)          # 输出字符串
+    print(teststr[0:-1])    # 输出第一个到倒数第二个的所有字符
+    print(teststr[0])       # 输出字符串第一个字符
+    print(teststr[2:5])     # 输出从第三个开始到第五个的字符
+    print(teststr[2:])      # 输出从第三个开始的后的所有字符
+    print(teststr * 2)      # 输出字符串两次
+    print(teststr + "TEST") # 连接字符串
 
 def test():
+    '''
+    测试函数
+    '''
     number_used()
     string_used()
     set_used()
@@ -169,6 +183,8 @@ def test():
 
 
 def main(argv):
+    '''主函数'''
+    print("运行参数", argv)
     info()
     test()
 
@@ -176,4 +192,3 @@ def main(argv):
 
 if __name__ == "__main__":
     main(sys.argv)
-
