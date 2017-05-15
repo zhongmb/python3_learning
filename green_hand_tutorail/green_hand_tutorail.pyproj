@@ -23,6 +23,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ght_001_first.py" />
+    <Compile Include="001_first.py" />
     <Compile Include="002_base_syntax.py">
       <SubType>Code</SubType>
     </Compile>
