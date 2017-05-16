@@ -1,8 +1,8 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
 '''
     只是python基础语法
 '''
-#!/usr/bin/python3
-# -*- coding: utf-8 -*-
 import sys
 
 def info():

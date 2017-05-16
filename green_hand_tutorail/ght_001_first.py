@@ -1,9 +1,9 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
 '''
     第一个python程序，hello world
 '''
 
-#!/usr/bin/python3
-# -*- coding: utf-8 -*-
 import sys
 
 def info():
