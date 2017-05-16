@@ -22,9 +22,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ght_000_template.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ght_001_first.py" />
     <Compile Include="ght_002_base_syntax.py" />
     <Compile Include="ght_003_base_data_type.py" />
+    <Compile Include="ght_004_operator.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="green_hand_tutorail.py" />
   </ItemGroup>
   <ItemGroup>

@@ -172,6 +172,11 @@ def string_used():
     print(teststr * 2)      # 输出字符串两次
     print(teststr + "TEST") # 连接字符串
 
+def convert_func():
+    '''类型转换函数'''
+    print(repr(convert_func))
+    # eval("print(1+2)") #会告警
+
 def test():
     '''
     测试函数
@@ -179,7 +184,7 @@ def test():
     number_used()
     string_used()
     set_used()
-
+    convert_func()
 
 
 def main(argv):
