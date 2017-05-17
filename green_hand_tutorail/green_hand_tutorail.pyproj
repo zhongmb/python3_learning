@@ -46,6 +46,9 @@
     <Compile Include="ght_009_dict.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ght_010_if.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="green_hand_tutorail.py" />
   </ItemGroup>
   <ItemGroup>
