@@ -34,6 +34,18 @@
     <Compile Include="ght_005_number.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ght_006_string.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ght_007_list.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ght_008_tuple.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ght_009_dict.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="green_hand_tutorail.py" />
   </ItemGroup>
   <ItemGroup>
