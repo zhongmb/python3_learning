@@ -49,6 +49,18 @@
     <Compile Include="ght_010_if.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ght_011_loop.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ght_012_iter_generator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ght_013_func.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ght_014_datastruct.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="green_hand_tutorail.py" />
   </ItemGroup>
   <ItemGroup>
