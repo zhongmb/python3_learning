@@ -61,6 +61,12 @@
     <Compile Include="ght_014_datastruct.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ght_015_module.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ght_016_input_print.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="green_hand_tutorail.py" />
   </ItemGroup>
   <ItemGroup>
