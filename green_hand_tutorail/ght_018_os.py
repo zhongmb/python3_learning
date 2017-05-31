@@ -23,14 +23,15 @@ Python3 OS 文件/目录方法
 13	os.fchown(fd, uid, gid) 修改一个文件的所有权，这个函数修改一个文件的用户ID和用户组ID，该文件由文件描述符fd指定。
 14	os.fdatasync(fd) 强制将文件写入磁盘，该文件由文件描述符fd指定，但是不强制更新文件的状态信息。
 15	os.fdopen(fd[, mode[, bufsize]]) 通过文件描述符 fd 创建一个文件对象，并返回这个文件对象
-16	os.fpathconf(fd, name) 返回一个打开的文件的系统配置信息。name为检索的系统配置的值，它也许是一个定义系统值的字符串，这些名字在很多标准中指定（POSIX.1, Unix 95, Unix 98, 和其它）。
+16	os.fpathconf(fd, name) 返回一个打开的文件的系统配置信息。name为检索的系统配置的值，它也许是一个定义系统值的字符串，
+        这些名字在很多标准中指定（POSIX.1, Unix 95, Unix 98, 和其它）。
 17	os.fstat(fd) 返回文件描述符fd的状态，像stat()。
 18	os.fstatvfs(fd) 返回包含文件描述符fd的文件的文件系统的信息，像 statvfs()
 19	os.fsync(fd) 强制将文件描述符为fd的文件写入硬盘。
 20	os.ftruncate(fd, length) 裁剪文件描述符fd对应的文件, 所以它最大不能超过文件大小。
 23	os.isatty(fd) 如果文件描述符fd是打开的，同时与tty(-like)设备相连，则返回true, 否则False。
 29	os.lseek(fd, pos, how) 设置文件描述符 fd当前位置为pos, how方式修改: SEEK_SET 或者 0 设置
-		从文件开始的计算的pos; SEEK_CUR或者 1 则从当前位置计算; 
+		从文件开始的计算的pos; SEEK_CUR或者 1 则从当前位置计算;
 		os.SEEK_END或者2则从文件尾部开始. 在unix，Windows中有效
 
 24	os.lchflags(path, flags) 设置路径的标记为数字标记，类似 chflags()，但是没有软链接
@@ -78,8 +79,8 @@ Python3 OS 文件/目录方法
 
 60	os.unlink(path)删除文件路径
 
-33	os.makedirs(path[, mode]) 递归文件夹创建函数。像mkdir(), 
-	但创建的所有intermediate-level文件夹需要包含子文件夹。	
+33	os.makedirs(path[, mode]) 递归文件夹创建函数。像mkdir(),
+	但创建的所有intermediate-level文件夹需要包含子文件夹。
 35	os.mkdir(path[, mode]) 以数字mode的mode创建一个名为path的文件夹.默认的 mode 是 0777 (八进制)。
 49	os.rmdir(path)删除path指定的空目录，如果目录非空，则抛出一个OSError异常。
 46	os.removedirs(path)递归删除目录。

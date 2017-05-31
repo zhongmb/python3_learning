@@ -73,6 +73,12 @@
     <Compile Include="ght_018_os.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ght_019_error_except.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ght_020_class.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="green_hand_tutorail.py" />
   </ItemGroup>
   <ItemGroup>
