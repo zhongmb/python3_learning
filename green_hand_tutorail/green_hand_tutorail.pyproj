@@ -73,10 +73,34 @@
     <Compile Include="ght_018_os.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ght_019_error_except.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ght_020_class.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ght_021_stardard_lib.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ght_023_re.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ght_024_cgi_web\www\cgi-bin\ght_024_000_first_cgi.py" />
     <Compile Include="green_hand_tutorail.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|PythonCore|3.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ght_022_example\" />
+    <Folder Include="ght_022_example\" />
+    <Folder Include="ght_024_cgi_web\" />
+    <Folder Include="ght_024_cgi_web\www\" />
+    <Folder Include="ght_024_cgi_web\www\cgi-bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ght_024_cgi_web\www\index.html" />
+    <Content Include="ght_024_cgi_web\www\starthttp.bat" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
