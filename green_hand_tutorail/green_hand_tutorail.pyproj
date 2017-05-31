@@ -93,7 +93,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ght_022_example\" />
-    <Folder Include="ght_022_example\" />
     <Folder Include="ght_024_cgi_web\" />
     <Folder Include="ght_024_cgi_web\www\" />
     <Folder Include="ght_024_cgi_web\www\cgi-bin\" />
